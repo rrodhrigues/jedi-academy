@@ -1,4 +1,4 @@
-<article class="">
+<article *ngIf="student" class="">
     Student: {{ student?.name }}
 
     <div *ngIf="student.isJedi" class="">
@@ -6,3 +6,7 @@
     </div>
 
 </article>
+
+<p *ngIf="!student">
+    Sem dados para exibir!
+</p>
